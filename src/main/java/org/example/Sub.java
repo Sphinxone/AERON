@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Sub {
     private static final int STREAM_ID = SampleConfiguration.STREAM_ID;
-    private static final String CHANNEL = SampleConfiguration.CHANNEL;
+    private static final String CHANNEL = "aeron:ipc";
     private static final int FRAGMENT_COUNT_LIMIT = SampleConfiguration.FRAGMENT_COUNT_LIMIT;
     private static final boolean EMBEDDED_MEDIA_DRIVER = SampleConfiguration.EMBEDDED_MEDIA_DRIVER;
     public static void main(final String[] args){

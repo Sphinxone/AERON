@@ -13,7 +13,7 @@ import javax.rmi.ssl.SslRMIClientSocketFactory;
 
 public class Pub {
     private static final int STREAM_ID = SampleConfiguration.STREAM_ID;
-    private static final String CHANNEL = SampleConfiguration.CHANNEL;
+    private static final String CHANNEL = "aeron:ipc";
     private static final long NUMBER_OF_MESSAGE = SampleConfiguration.NUMBER_OF_MESSAGES;
     private static final long LINGER_TIMEOUT_MS = SampleConfiguration.LINGER_TIMEOUT_MS;
     private static final boolean EMBEDDED_MEDIA_DRIVER = SampleConfiguration.EMBEDDED_MEDIA_DRIVER;
