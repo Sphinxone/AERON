@@ -86,7 +86,10 @@ Sender，Receiver和Media Driver运行在同一个线程中，这个模式适用
 
 ![image](./pic/channels.png)
 
-根据之前使用NAK的可靠UDP重传根据Channels，Streams和SessionID来进行重排序。
+根据之前使用NAK的可靠UDP重传根据Channels，Streams和SessionID来对于不同的数据源进行重排序。
+
+
+
 
 
 
