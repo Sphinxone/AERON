@@ -33,5 +33,7 @@ public class StartHere {
     final Subscription subscription = aeron.addSubscription(channel, stream);
     final Publication publication = aeron.addPublication(channel, stream);
 
-//    final SendAgent sendAgent
+    final SendAgent sendAgent = new SendAgent(publication, sendCount);
+    final ReceiveAgent receiveAgent = new ReceiveAgent(subscription, barrier, sendCount);
+
 }
